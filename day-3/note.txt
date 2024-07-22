@@ -1,0 +1,77 @@
+Loops in javaScript
+
+1. for loops
+
+=> for(let i = 1; i< 5, i++){
+
+    }
+
+2. While loops 
+
+=> while(condition){
+
+    }
+
+3. Do while loops
+
+=> do{
+
+    }while();
+
+4. for-of loops
+
+   let str = "Riwaj";
+=> for(let i of str){
+    
+    }
+
+5. for-in loops
+
+    const profile ={
+        name : "Riwaj",
+        age : 21,
+        height : "171 cm"
+    }
+
+    for(let i in profile){
+        
+    }
+
+Promt returns value in string so use '==' while comparing with numbers.
+
+
+
+=> Strings functions
+
+const str = "Riwaj";
+
+1. Strings length
+=> str.length
+
+2. Strings Indices
+=> str[0]   (Position starts form 0 and -1 is not used)
+
+3. Upper and Lower class of words.
+=> str.toUpperCase()
+=> str.toLowerCase()
+
+4. Remove space
+=> str.trim()
+
+5. Slicing
+=> str.slice(start,end) >> end is exclusive
+
+6. Replace
+=> str.replace(toreplace,withreplace);
+=> str.replaceAll(toreplace,withreplace);
+
+
+
+=> Escape Character 
+
+\n = next line 
+\t = next tab
+
+They act as a single Character while counting the length or using the .length()
+
+

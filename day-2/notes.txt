@@ -1,0 +1,26 @@
+Comments
+
+Single line comment => //
+Multiple line comment => /* */
+
+
+Operators in Java
+
++,-,* and /
+
+
+Unary Operators
+
+a++ , a+=1
+
+a--, a-=1
+
+++a = pre (increase the value in same line)
+a++ = post (increase the value in another line)
+
+
+Ternary Operators
+
+structure => (condition ? ture output : false output;)
+
+
