@@ -19,3 +19,43 @@ for(let el of marks){
     console.log(el);
 
 }
+
+// push functions of arrays.
+
+let items = [1,2,3,4,5,56,6]
+
+items.push(0,1,2,3,4,5)
+
+console.log(items)
+
+
+console.log(typeof items.toString());
+
+
+// Concat fuctions of arrays.
+
+let marvel = ["thor","spider man","ironman"];
+let dc_heros = ["superman","batman"];
+
+dc_heros.splice(1,2,"BS","RT");
+
+console.log(dc_heros);
+
+console.log(marvel.concat(dc_heros));
+
+marvel.push("hello");
+
+console.log(marvel);
+
+marvel.pop();
+console.log(marvel);
+
+console.log(marvel.toString());
+console.log(marvel);
+
+//  splice 
+
+let arr = [1,2,3,4,5,6,7,8,9];
+
+arr.splice(3,1);
+console.log(arr);

@@ -15,5 +15,13 @@ Arrays Indices( starts from the 0)
 
 marks[0],marks[1],marks[2]
 
+Arrays Functions
 
-=>> Continue video in 36:00
+=> .push() -- Add the elements in the last position in array. [permanent change]
+=> .pop() -- Delete the last items in the arrays. [parmanent change]
+=> .toString() -- Convert the array to the string. [temporary change]
+=> .concat() -- add two arrays. [temporary change]
+=> .unshift() -- add elements in first position. [permanent change]
+=> .shift() -- delete the first position of array. [permanent change]
+=> .slice(startIDX, endIDX) -- slice the arrays. [temporary change]
+=> .splice(startIDX, no of elements, new elements) -- change the array permanently.
