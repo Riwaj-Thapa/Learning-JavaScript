@@ -44,6 +44,7 @@ Promt returns value in string so use '==' while comparing with numbers.
 => Strings functions
 
 const str = "Riwaj";
+=> Strings are immutable 
 
 1. Strings length
 => str.length
