@@ -25,3 +25,5 @@ Arrays Functions
 => .shift() -- delete the first position of array. [permanent change]
 => .slice(startIDX, endIDX) -- slice the arrays. [temporary change]
 => .splice(startIDX, no of elements, new elements) -- change the array permanently.
+
+//
