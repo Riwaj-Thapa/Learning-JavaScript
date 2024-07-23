@@ -1,0 +1,70 @@
+functions 
+
+// 1. Normal function
+
+functions name(){
+
+};
+
+// 2. parameter function
+
+functions name(para 1, para 2){
+
+};
+
+// 3. arrows function
+
+const name = (para 1, para 2 )=>{
+
+};
+
+
+=> function and methods are same but methods are binded with objects , datatypes.
+
+
+// call back functions
+=> A call back is a function passed as an argument to another funtions.
+
+let number = [1,2,3,4,5,6,7,8];
+let numberSquare = [];
+
+
+// 1. For each (no new array)
+
+number.forEach((val)=>{
+    numberSquare.push(val*val)
+    }
+);
+console.log(numberSquare);
+
+
+// Higher Order funtions => functions as parameter or return functions.
+
+
+// 2. Map (return new array)
+
+let newArr = arr.map(()=>{
+
+
+});
+
+
+// 3. Filter 
+
+let newArr = arr.filter((val)=>{
+
+    return val%2==0;
+
+});
+
+
+// 4. Reduce
+
+let newValue = arr.reduce(
+    (pre,curr)=>{
+        return operations ? ture : false ;
+    }
+);
+
+
+
