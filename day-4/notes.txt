@@ -26,4 +26,3 @@ Arrays Functions
 => .slice(startIDX, endIDX) -- slice the arrays. [temporary change]
 => .splice(startIDX, no of elements, new elements) -- change the array permanently.
 
-//
