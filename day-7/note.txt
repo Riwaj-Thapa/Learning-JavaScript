@@ -1,0 +1,18 @@
+ Attributes
+
+ => getAttribute(attr)
+
+ => setAttributes(attr,value)
+
+ Insert Elements 
+
+ => node.append(el) // at the end of node.(inside)
+ => node.prepend(el) // at the start of node.(inside)
+ => node.before(el) // adds before the node.(outside)
+ => node.after(el) // adds after the node.(outside)
+
+ Remove Elements
+
+ => node.remove()
+
+ 
