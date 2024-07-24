@@ -1,0 +1,52 @@
+Window object (global object)
+=> It is an browser object which store properties and method.
+
+DOM (Document Object Model)
+
+
+          node       node
+            |          |       /--->head-->(meta,title,link)
+Window -> Document -> HTML -> 
+                              \--->body-->(div(img,h1,p),script)
+
+
+-> Dynamic changes in webpage.
+
+
+=> id must be unique.
+=> class can be similar if they have similar features.
+
+DOM Manipulation
+
+1. Selecting with ID
+=> document.getElementById("myId")
+
+2. Selecting with class
+=> document.getElementByClassName("myClass")
+
+3. Selecting with tag
+=> document.getElementByTagName("p")
+
+
+Query Selector
+
+// return first element.
+=> document.querySelector("p")  (for class we use . and for id we use #)
+
+//return a nodelist.
+=> document.querySelectorAll("p")
+
+
+Parent , child and sibling
+
+Body => div => (<p> and <h1>)
+
+.text
+.comment
+.element
+
+
+tagName: returns tag
+innerText: returns the text content of the element.
+innerHTML: returns the plain text or HTML
+textContent: returns textual content even for hidden elements.
