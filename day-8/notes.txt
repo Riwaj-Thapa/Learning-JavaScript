@@ -1,0 +1,8 @@
+--> use mdn web docs for more features.
+
+=> Events in JS
+
+onclick, ondlclick, etc...
+
+inline events handling => events using in the HTML.
+
