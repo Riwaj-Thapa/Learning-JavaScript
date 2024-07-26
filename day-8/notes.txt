@@ -6,3 +6,21 @@ onclick, ondlclick, etc...
 
 inline events handling => events using in the HTML.
 
+Inline <<< JavaScript 
+last handler will over ride the code.
+
+
+Event features type, target.
+
+
+Event Listener.
+
+>> node.addEventListener("",()=>{
+
+
+})
+
+
+// If i want to access the style.css from the JavaScript i can use
+
+=> .classList.add("class-name");
