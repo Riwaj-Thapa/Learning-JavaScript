@@ -1,0 +1,7 @@
+margin = space outside the box or component.
+
+padding = space inside the box or component.
+
+about the rem.
+
+object-fit: cover;
