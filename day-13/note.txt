@@ -1,0 +1,67 @@
+# API (Application Programming Interface)
+
+=> fetch API 
+
+let promise = fetch(url,[options])
+
+
+-----------------------------------------------------
+
+AJAX = Asynchronous JS and XML
+
+JSON = JavaScript Object Notation
+
+
+------------------------------------------------------
+
+>>> fetching data using the async-await and promise. <<<
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+
+---------------------------------------------------
+using async - await
+---------------------------------------------------
+const getFacts = async()=>{
+
+    let response = await fetch(URL);
+
+    let data = await response.json();
+
+    console.log(data[2].text);
+}
+
+---------------------------------------------------
+using the promise
+---------------------------------------------------
+function getFacts(){
+
+    fetch(URL)
+
+    .then((response)=>{
+
+        return response.json();
+
+    })
+
+    .then((data)=>{
+
+        console.log(data[2].text);
+
+    }); 
+
+}
+
+--------------------------------------------------------------
+
+
+HTTP => Hyper Text Transfor Protocol
+
+status 200 (everything is ok)
+______________________________________
+|                                    |
+|  Informational response (100-199)  |
+|  Successful response (200-299)     |
+|  Redirection messages (300-399)    |
+|  Client error responses (400-499)  |
+|  Server error responses (500-599)  |
+|____________________________________|
