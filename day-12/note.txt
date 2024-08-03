@@ -1,0 +1,111 @@
+-------------------------------------------------------------------
+
+// Sync in Js (sequence ma huni) \\
+
+=> code that runs in particular sequence that we planned.
+
+---------------------------------------------------------------
+
+// Asynchronous \\
+
+=> code that runs not in particular sequence that we planned.
+
+=> we use the setTimeOut(function,time) function to delay;
+
+        setTimeOut(()=>{
+
+        }, 30000);
+
+=> due to the delay of code 
+
+------------------------------------------------------------------
+
+// Callbacks \\
+
+- we pass the function as the argument to the another function.
+- we dont call the function with parathesis while call the function inside the function.
+
+for example:
+
+    function add(a,b){
+        console.log(a+b)
+    }
+
+    function addBoss(a, b, addCallback){
+        addCallback(a,b)
+    }
+
+    addBoss(1,2,add);
+
+-----------------------------------------------------------------
+
+// Callback hell \\ 
+
+-> nested callbacks that form pyramid of doom.
+
+------------------------------------------------------------------
+
+// Promise \\
+
+-> to solve the problem of callback hell.
+
+-> Syntax
+
+let promise = new Promise((resolve,reject)=>{
+
+    });
+
+          --> Pending
+        /
+state   ----> Fulfilled (Resolved)
+        \
+          --> Rejected
+
+
+.then() and .catch() are used to perform the task data from the promise.
+
+// if the promise is Fulfilled.
+
+promise.then((res)=>{
+
+    });
+
+// if the promise is not Fulfilled.
+
+promise.catch((err)=>{
+
+    });
+-----------------------------------------------------------
+
+// async and await \\
+
+function functionName1(arg){
+    console.log("data:",arg);
+}
+
+async function functionName2(){
+    await functionName1(1);
+    await functionName1(2);
+    await functionName1(3);
+}
+
+functionName2();
+
+
+IIFE (Immediately Invoked Function Expression) 
+
+=> It cannot be used twice.
+
+=> Syntax-- (func)();
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
