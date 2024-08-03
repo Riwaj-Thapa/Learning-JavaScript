@@ -1,0 +1,54 @@
+Object in javaScript.
+
+=> is an entity having state and behavior(properties and method)
+
+prototype is the specical properties that every object has it and its type is reference to the object or may be null.
+
+push(), pop() etc are the properties that comes from the prototype object.
+
+this => represent the object inside the object if it is used in object.
+
+
+using the object1 feature form object2 using prototype.
+
+>>>> object2.__proto__=object1; <<<<
+
+own properties won't be override if the properties is already in the object using the prototype.
+
+---------------------------------------------------------------------
+
+Class in javaScript.
+
+Class is the blue print of object or it can be simply said the it is the collection of same object having similar properties and freatures.
+
+
+
+------------------------------------------------------
+Constructor
+
+to initialize the default properties of object while creating the new object.
+
+
+-------------------------------------
+Inheritance
+
+class Parent{
+
+}
+
+class Child extends Parent{
+
+}
+
+child class = derived class
+
+
+super keyword = to invoke parent class constructor,methods etc .
+----------------------------------------
+
+Error Handling
+
+That is try catch
+
+
+
