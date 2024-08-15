@@ -1,0 +1,36 @@
+
+Datatypes in JavaScripts are:-
+
+
+>> Primitive datatypes
+
+    Number 
+    String
+    Boolean 
+    undefined(has been declared but has not been assigned)
+    null(simple an absence of value)
+    BigInt
+    Symbol
+
+>> Non-primitive datatypes
+
+    objects(map,date)
+    arrays
+    Functions
+    sets
+
+
+Let , Const and Var
+
+var: 
+ > It is function scoped.
+ > It is reassignable.
+
+let: 
+ > It is block-scoped.
+ > It can be reassignable.
+
+const: 
+ > It is also block-scoped.
+ > It cannot be reassignable.
+
