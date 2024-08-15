@@ -16,3 +16,5 @@ if(name=='Riwaj'){
 }else{
     console.log("who the fuck are you too nigga ",name);
 }
+
+
