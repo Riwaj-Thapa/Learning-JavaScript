@@ -18,14 +18,14 @@ Loops in javaScript
 
     }while();
 
-4. for-of loops
+4. for-of loops (It is used for arrays, strings, maps etc)
 
    let str = "Riwaj";
 => for(let i of str){
     
     }
 
-5. for-in loops
+5. for-in loops (It is used for Ilterating objects.)
 
     const profile ={
         name : "Riwaj",
