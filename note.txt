@@ -1,0 +1,586 @@
+
+Datatypes in JavaScripts are:-
+
+--------------------------
+>> Primitive datatypes
+--------------------------
+    Number 
+    String
+    Boolean 
+    undefined(has been declared but has not been assigned)
+    null(simple an absence of value)
+    BigInt
+    Symbol
+
+---------------------------
+>> Non-primitive datatypes
+---------------------------
+    objects(map,date)
+    arrays
+    Functions
+    sets
+
+------------------------------
+Let , Const and Var
+------------------------------
+
+var: 
+ > It is function scoped.
+ > It is reassignable.
+
+let: 
+ > It is block-scoped.
+ > It can be reassignable.
+
+const: 
+ > It is also block-scoped.
+ > It cannot be reassignable.
+
+-----------------------------------------
+Comments
+
+Single line comment => //
+Multiple line comment => /* */
+
+
+Operators in Java
+
++,-,* and /
+
+
+Unary Operators
+
+a++ , a+=1
+
+a--, a-=1
+
+++a = pre (increase the value in same line)
+a++ = post (increase the value in another line)
+
+
+>> Ternary Operators
+
+   variableDeclaration variable = condition ? tureOutput : falseOutput;
+==============================================================================
+Loops in javaScript
+--------------------------------------------------------------------
+1. for loops
+
+=> for(let i = 1; i< 5, i++){
+
+    }
+----------------------------------------------------
+2. While loops 
+
+=> while(condition){
+
+    }
+-----------------------------------------------------
+3. Do while loops
+
+=> do{
+
+    }while();
+-----------------------------------------------------
+4. for-of loops (It is used for arrays, strings, maps etc)
+
+   let str = "Riwaj";
+=> for(let i of str){
+    
+    }
+-----------------------------------------------------
+5. for-in loops (It is used for Ilterating objects.)
+
+    const profile ={
+        name : "Riwaj",
+        age : 21,
+        height : "171 cm"
+    }
+
+    for(let i in profile){
+        
+    }
+-------------------------------------------------------
+Promt returns value in string so use '==' while comparing with numbers.
+
+-------------------------
+=> Strings functions
+-------------------------
+
+const str = "Riwaj";
+=> Strings are immutable 
+
+1. Strings length
+=> str.length
+
+2. Strings Indices
+=> str[0]   (Position starts form 0 and -1 is not used)
+
+3. Upper and Lower class of words.
+=> str.toUpperCase()
+=> str.toLowerCase()
+
+4. Remove space
+=> str.trim()
+
+5. Slicing
+=> str.slice(start,end) >> end is exclusive
+
+6. Replace
+=> str.replace(toreplace,withreplace);
+=> str.replaceAll(toreplace,withreplace);
+
+
+
+=> Escape Character 
+
+\n = next line 
+\t = next tab
+
+They act as a single Character while counting the length or using the .length()
+
+==============================================================================
+Arrays in Js 
+ => Arrays are simply the collection of items. 
+ => Arrays are objects datatype and key in arrays are index.
+ => Arrays are muttable.
+
+Structure
+
+let marks = [1,2,3,4,5,6,7];
+
+=> position matters in arrays that is index.
+=> can store multiple datatype.
+
+
+Arrays Indices( starts from the 0)
+
+marks[0],marks[1],marks[2]
+
+Arrays Functions
+
+=> .push() -- Add the elements in the last position in array. [permanent change]
+=> .pop() -- Delete the last items in the arrays. [parmanent change]
+=> .toString() -- Convert the array to the string. [temporary change]
+=> .concat() -- add two arrays. [temporary change]
+=> .unshift() -- add elements in first position. [permanent change]
+=> .shift() -- delete the first position of array. [permanent change]
+=> .slice(startIDX, endIDX) -- slice the arrays. [temporary change]
+=> .splice(startIDX, no of elements, new elements) -- change the array permanently.
+
+==============================================================================
+functions 
+
+// 1. Normal function
+
+functions name(){
+
+};
+
+// 2. parameter function
+
+functions name(para 1, para 2){
+
+};
+
+// 3. arrows function
+
+const name = (para 1, para 2 )=>{
+
+};
+
+-----------------------------------------------------------------------
+=> function and methods are same but methods are binded with objects , datatypes.
+
+
+// call back functions
+=> A call back is a function passed as an argument to another funtions.
+
+let number = [1,2,3,4,5,6,7,8];
+let numberSquare = [];
+
+
+// 1. For each (no new array)
+
+number.forEach((val)=>{
+    numberSquare.push(val*val)
+    }
+);
+console.log(numberSquare);
+
+
+// Higher Order funtions => functions as parameter or return functions.
+
+
+// 2. Map (return new array)
+
+let newArr = arr.map(()=>{
+
+
+});
+
+
+// 3. Filter 
+
+let newArr = arr.filter((val)=>{
+
+    return val%2==0;
+
+});
+
+
+// 4. Reduce
+
+let newValue = arr.reduce(
+    (pre,curr)=>{
+        return operations ? ture : false ;
+    }
+);
+
+==============================================================================
+Window object (global object)
+=> It is an browser object which store properties and method.
+
+DOM (Document Object Model)
+
+
+          node       node
+            |          |       /--->head-->(meta,title,link)
+Window -> Document -> HTML -> 
+                              \--->body-->(div(img,h1,p),script)
+
+
+-> Dynamic changes in webpage.
+
+
+=> id must be unique.
+=> class can be similar if they have similar features.
+
+DOM Manipulation
+
+1. Selecting with ID
+=> document.getElementById("myId")
+
+2. Selecting with class
+=> document.getElementByClassName("myClass")
+
+3. Selecting with tag
+=> document.getElementByTagName("p")
+
+
+Query Selector
+
+// return first element.
+=> document.querySelector("p")  (for class we use . and for id we use #)
+
+//return a nodelist.
+=> document.querySelectorAll("p")
+
+
+Parent , child and sibling
+
+Body => div => (<p> and <h1>)
+
+.text
+.comment
+.element
+
+
+tagName: returns tag
+innerText: returns the text content of the element.
+innerHTML: returns the plain text or HTML
+textContent: returns textual content even for hidden elements.
+==============================================================================
+
+ Attributes
+
+ => getAttribute(attr)
+
+ => setAttributes(attr,value)
+
+ Insert Elements 
+
+ => node.append(el) // at the end of node.(inside)
+ => node.prepend(el) // at the start of node.(inside)
+ => node.before(el) // adds before the node.(outside)
+ => node.after(el) // adds after the node.(outside)
+
+ Remove Elements
+
+ => node.remove()
+
+==============================================================================
+--> use mdn web docs for more features.
+
+=> Events in JS
+
+onclick, ondlclick, etc...
+
+inline events handling => events using in the HTML.
+
+Inline <<< JavaScript 
+last handler will over ride the code.
+
+
+Event features type, target.
+
+
+Event Listener.
+
+>> node.addEventListener("",()=>{
+
+
+})
+
+
+// If i want to access the style.css from the JavaScript i can use
+
+=> .classList.add("class-name");
+==============================================================================
+
+Coolors website to generate the Colors.
+==============================================================================
+
+margin = space outside the box or component.
+
+padding = space inside the box or component.
+
+about the rem.
+
+object-fit: cover;
+--------------------------------------------------------------------------
+==============================================================================
+Object in javaScript.
+
+=> is an entity having state and behavior(properties and method)
+
+prototype is the specical properties that every object has it and its type is reference to the object or may be null.
+
+push(), pop() etc are the properties that comes from the prototype object.
+
+this => represent the object inside the object if it is used in object.
+
+
+using the object1 feature form object2 using prototype.
+
+>>>> object2.__proto__=object1; <<<<
+
+own properties won't be override if the properties is already in the object using the prototype.
+
+---------------------------------------------------------------------
+
+Class in javaScript.
+
+Class is the blue print of object or it can be simply said the it is the collection of same object having similar properties and freatures.
+
+
+
+------------------------------------------------------
+Constructor
+
+to initialize the default properties of object while creating the new object.
+
+
+-------------------------------------
+Inheritance
+
+class Parent{
+
+}
+
+class Child extends Parent{
+
+}
+
+child class = derived class
+
+
+super keyword = to invoke parent class constructor,methods etc .
+----------------------------------------
+
+Error Handling
+
+That is try catch
+
+==============================================================================
+
+
+// Sync in Js (sequence ma huni) \\
+
+=> code that runs in particular sequence that we planned.
+
+---------------------------------------------------------------
+
+// Asynchronous \\
+
+=> code that runs not in particular sequence that we planned.
+
+=> we use the setTimeOut(function,time) function to delay;
+
+        setTimeOut(()=>{
+
+        }, 30000);
+
+=> due to the delay of code 
+
+------------------------------------------------------------------
+
+// Callbacks \\
+
+- we pass the function as the argument to the another function.
+- we dont call the function with parathesis while call the function inside the function.
+
+for example:
+
+    function add(a,b){
+        console.log(a+b)
+    }
+
+    function addBoss(a, b, addCallback){
+        addCallback(a,b)
+    }
+
+    addBoss(1,2,add);
+
+-----------------------------------------------------------------
+
+// Callback hell \\ 
+
+-> nested callbacks that form pyramid of doom.
+
+------------------------------------------------------------------
+
+// Promise \\
+
+-> to solve the problem of callback hell.
+
+-> Syntax
+
+let promise = new Promise((resolve,reject)=>{
+
+    });
+
+          --> Pending
+        /
+state   ----> Fulfilled (Resolved)
+        \
+          --> Rejected
+
+
+.then() and .catch() are used to perform the task data from the promise.
+
+// if the promise is Fulfilled.
+
+promise.then((res)=>{
+
+    });
+
+// if the promise is not Fulfilled.
+
+promise.catch((err)=>{
+
+    });
+-----------------------------------------------------------
+
+// async and await \\
+
+function functionName1(arg){
+    console.log("data:",arg);
+}
+
+async function functionName2(){
+    await functionName1(1);
+    await functionName1(2);
+    await functionName1(3);
+}
+
+functionName2();
+
+
+IIFE (Immediately Invoked Function Expression) 
+
+=> It cannot be used twice.
+
+=> Syntax-- (func)();
+
+==============================================================================
+
+
+# API (Application Programming Interface)
+
+=> fetch API 
+
+let promise = fetch(url,[options])
+
+
+-----------------------------------------------------
+
+AJAX = Asynchronous JS and XML
+
+JSON = JavaScript Object Notation
+
+
+------------------------------------------------------
+
+>>> fetching data using the async-await and promise. <<<
+
+const URL = "https://cat-fact.herokuapp.com/facts";
+
+---------------------------------------------------
+using async - await
+---------------------------------------------------
+const getFacts = async()=>{
+
+    let response = await fetch(URL);
+
+    let data = await response.json();
+
+    console.log(data[2].text);
+}
+
+---------------------------------------------------
+using the promise
+---------------------------------------------------
+function getFacts(){
+
+    fetch(URL)
+
+    .then((response)=>{
+
+        return response.json();
+
+    })
+
+    .then((data)=>{
+
+        console.log(data[2].text);
+
+    }); 
+
+}
+
+--------------------------------------------------------------
+
+
+HTTP => Hyper Text Transfor Protocol
+
+status 200 (everything is ok)
+______________________________________
+|                                    |
+|  Informational response (100-199)  |
+|  Successful response (200-299)     |
+|  Redirection messages (300-399)    |
+|  Client error responses (400-499)  |
+|  Server error responses (500-599)  |
+|____________________________________|
+
+==============================================================================
+
+
+
+
+
+
+
+
+
